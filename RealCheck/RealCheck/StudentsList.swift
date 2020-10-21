@@ -43,7 +43,9 @@ struct StudentsList : View {
                 trailing: 0))
             ) {
                 ForEach(students, id: \.self) { student in
-                    StudentsListCell(name: student.name, phoneNum: student.phoneNum, temperture: student.temperture, symptom: student.symptom, check: student.check)
+                    NavigationLink(destination: StudentDetailList()) {
+                        StudentsListCell(name: student.name, phoneNum: student.phoneNum, temperture: student.temperture, symptom: student.symptom, check: student.check)
+                    }
                 }
             }//Section
             .listRowInsets(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
