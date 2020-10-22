@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import UIKit
 
 //출석 현황까지 함께 있는 List!
 //Section1에 들어가게 되겠지? 출석현황은
 struct StudentsList : View {
+    
+    @State var isNavigationBarHidden:Bool = false
     
     init() {
         if #available(iOS 14.0, *) {
@@ -33,24 +36,30 @@ struct StudentsList : View {
                     .fontWeight(.regular)
                     .foregroundColor(.black)
                     .padding()
-                    
+                
             }
             .background(Color.white)
             .listRowInsets(EdgeInsets(
-                top: 0,
-                leading: 0,
-                bottom: 0,
-                trailing: 0))
+                            top: 0,
+                            leading: 0,
+                            bottom: 0,
+                            trailing: 0))
             ) {
                 ForEach(students, id: \.self) { student in
-                    NavigationLink(destination: StudentDetailList()) {
-                        StudentsListCell(name: student.name, phoneNum: student.phoneNum, temperture: student.temperture, symptom: student.symptom, check: student.check)
+                    ZStack {
+                        NavigationLink(destination: StudentDetailList(isNavigationBarHidden: self.$isNavigationBarHidden, studentName:student.name)) {
+                                EmptyView()
+                        }
+                        StudentsListCell(student: student)
+                            
                     }
                 }
             }//Section
             .listRowInsets(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
         }//List
         .listStyle(GroupedListStyle())
+        .listSeparatorStyle(style: .none)
+
     }
 }
 

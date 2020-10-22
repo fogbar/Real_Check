@@ -7,8 +7,11 @@
 
 import SwiftUI
 import Foundation
+import UIKit
 
 struct ContentView: View {
+    
+    @State var isNavigationBarHidden:Bool = false
     
     var body: some View {
         
@@ -37,8 +40,14 @@ struct ContentView: View {
                 
             }//VStack
             .padding(.top, 20)
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(self.isNavigationBarHidden)
+            .onAppear {
+                self.isNavigationBarHidden = true
+            }
             
         }//NavigationView
+        
         
     }
 }
