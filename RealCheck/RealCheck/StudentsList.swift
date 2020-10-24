@@ -25,7 +25,7 @@ struct StudentsList : View {
     
     var body: some View {
         
-        List {
+        List() {
             //첫번째 Section
             Section(header: HStack {
                 Spacer()
@@ -47,7 +47,7 @@ struct StudentsList : View {
             ) {
                 ForEach(students, id: \.self) { student in
                     ZStack {
-                        NavigationLink(destination: StudentDetailList(isNavigationBarHidden: self.$isNavigationBarHidden, studentName:student.name)) {
+                        NavigationLink(destination: StudentDetailList(isNavigationBarHidden: self.$isNavigationBarHidden, student:student)) {
                                 EmptyView()
                         }
                         StudentsListCell(student: student)
@@ -56,6 +56,7 @@ struct StudentsList : View {
                 }
             }//Section
             .listRowInsets(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
+            
         }//List
         .listStyle(GroupedListStyle())
         .listSeparatorStyle(style: .none)

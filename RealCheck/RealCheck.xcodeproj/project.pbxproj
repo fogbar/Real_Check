@@ -19,6 +19,8 @@
 		43571F01253EDC81007C636C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43571F00253EDC81007C636C /* Preview Assets.xcassets */; };
 		43571F04253EDC81007C636C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43571F02253EDC81007C636C /* LaunchScreen.storyboard */; };
 		43571F0D253EE8A4007C636C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43571F0C253EE8A4007C636C /* Utility.swift */; };
+		438C9AA62543F604004C7199 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C9AA52543F604004C7199 /* DetailListCell.swift */; };
+		438C9AA92543F62A004C7199 /* StudentInfoInDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C9AA82543F62A004C7199 /* StudentInfoInDetailList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		43571F03253EDC81007C636C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43571F05253EDC81007C636C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43571F0C253EE8A4007C636C /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		438C9AA52543F604004C7199 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
+		438C9AA82543F62A004C7199 /* StudentInfoInDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoInDetailList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,7 @@
 				431EF58F254010A600007DC0 /* SendMessageButton.swift */,
 				431EF5922540177300007DC0 /* StudentsList.swift */,
 				431EF59825401BBA00007DC0 /* StudentsListCell.swift */,
-				431EF59C25402DBB00007DC0 /* StudentDetailList.swift */,
+				438C9AAB2543F8CC004C7199 /* DetailList */,
 			);
 			path = RealCheck;
 			sourceTree = "<group>";
@@ -91,6 +95,16 @@
 				43571F00253EDC81007C636C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		438C9AAB2543F8CC004C7199 /* DetailList */ = {
+			isa = PBXGroup;
+			children = (
+				431EF59C25402DBB00007DC0 /* StudentDetailList.swift */,
+				438C9AA52543F604004C7199 /* DetailListCell.swift */,
+				438C9AA82543F62A004C7199 /* StudentInfoInDetailList.swift */,
+			);
+			path = DetailList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +179,11 @@
 			files = (
 				43571F0D253EE8A4007C636C /* Utility.swift in Sources */,
 				431EF59D25402DBB00007DC0 /* StudentDetailList.swift in Sources */,
+				438C9AA62543F604004C7199 /* DetailListCell.swift in Sources */,
 				431EF5932540177300007DC0 /* StudentsList.swift in Sources */,
 				43571EF8253EDC7E007C636C /* AppDelegate.swift in Sources */,
 				431EF596254018DE00007DC0 /* DummyData.swift in Sources */,
+				438C9AA92543F62A004C7199 /* StudentInfoInDetailList.swift in Sources */,
 				43571EFA253EDC7E007C636C /* SceneDelegate.swift in Sources */,
 				43571EFC253EDC7E007C636C /* ContentView.swift in Sources */,
 				431EF590254010A600007DC0 /* SendMessageButton.swift in Sources */,
