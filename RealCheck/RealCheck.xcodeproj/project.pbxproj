@@ -21,6 +21,7 @@
 		43571F0D253EE8A4007C636C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43571F0C253EE8A4007C636C /* Utility.swift */; };
 		438C9AA62543F604004C7199 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C9AA52543F604004C7199 /* DetailListCell.swift */; };
 		438C9AA92543F62A004C7199 /* StudentInfoInDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C9AA82543F62A004C7199 /* StudentInfoInDetailList.swift */; };
+		438C9AAF254411B6004C7199 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C9AAE254411B6004C7199 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		43571F0C253EE8A4007C636C /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		438C9AA52543F604004C7199 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
 		438C9AA82543F62A004C7199 /* StudentInfoInDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoInDetailList.swift; sourceTree = "<group>"; };
+		438C9AAE254411B6004C7199 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438C9AAF254411B6004C7199 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 			children = (
 				43571EF6253EDC7E007C636C /* RealCheck */,
 				43571EF5253EDC7E007C636C /* Products */,
+				438C9AAD254411B6004C7199 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +109,14 @@
 				438C9AA82543F62A004C7199 /* StudentInfoInDetailList.swift */,
 			);
 			path = DetailList;
+			sourceTree = "<group>";
+		};
+		438C9AAD254411B6004C7199 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438C9AAE254411B6004C7199 /* MessageUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
