@@ -38,6 +38,8 @@ struct ContentView: View {
                 
                 //이 자리에 PickerView 들어가면 되겠다.
                 
+                TeacherPickerView()
+                
                 Spacer().frame(height: 20)
                 
                 StudentsList()

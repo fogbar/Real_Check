@@ -22,6 +22,7 @@
 		438C9AA62543F604004C7199 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C9AA52543F604004C7199 /* DetailListCell.swift */; };
 		438C9AA92543F62A004C7199 /* StudentInfoInDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C9AA82543F62A004C7199 /* StudentInfoInDetailList.swift */; };
 		438C9AAF254411B6004C7199 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C9AAE254411B6004C7199 /* MessageUI.framework */; };
+		438C9AB625441C18004C7199 /* TeacherPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C9AB525441C18004C7199 /* TeacherPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		438C9AA52543F604004C7199 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
 		438C9AA82543F62A004C7199 /* StudentInfoInDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoInDetailList.swift; sourceTree = "<group>"; };
 		438C9AAE254411B6004C7199 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		438C9AB525441C18004C7199 /* TeacherPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +87,7 @@
 				43571EFF253EDC81007C636C /* Preview Content */,
 				431EF595254018DE00007DC0 /* DummyData.swift */,
 				43571F0C253EE8A4007C636C /* Utility.swift */,
-				431EF58F254010A600007DC0 /* SendMessageButton.swift */,
-				431EF5922540177300007DC0 /* StudentsList.swift */,
-				431EF59825401BBA00007DC0 /* StudentsListCell.swift */,
+				438C9AB425441BFE004C7199 /* FirstScreen */,
 				438C9AAB2543F8CC004C7199 /* DetailList */,
 			);
 			path = RealCheck;
@@ -117,6 +117,17 @@
 				438C9AAE254411B6004C7199 /* MessageUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438C9AB425441BFE004C7199 /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				431EF58F254010A600007DC0 /* SendMessageButton.swift */,
+				431EF5922540177300007DC0 /* StudentsList.swift */,
+				431EF59825401BBA00007DC0 /* StudentsListCell.swift */,
+				438C9AB525441C18004C7199 /* TeacherPickerView.swift */,
+			);
+			path = FirstScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				431EF596254018DE00007DC0 /* DummyData.swift in Sources */,
 				438C9AA92543F62A004C7199 /* StudentInfoInDetailList.swift in Sources */,
 				43571EFA253EDC7E007C636C /* SceneDelegate.swift in Sources */,
+				438C9AB625441C18004C7199 /* TeacherPickerView.swift in Sources */,
 				43571EFC253EDC7E007C636C /* ContentView.swift in Sources */,
 				431EF590254010A600007DC0 /* SendMessageButton.swift in Sources */,
 				431EF59925401BBA00007DC0 /* StudentsListCell.swift in Sources */,
